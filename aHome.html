@@ -2,62 +2,43 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lenha & Prosa</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .cabecalho {
-            min-height: 350px;
-            background-image: url("images.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            /* todos os elementos são flexiveis */
-            display: flex;
-            /* mantem os elementos em linha horizontal e quebra o elemento para proxima linha */
-            flex-flow: row wrap;
-            /* define o elemento a direita  */
-            justify-content: flex-end;
-            align-items: flex-end;
-        }
-
-        .navbar a {
-            font-size: 25px;
-            color: black;
-            text-decoration: none;
-            padding: 15px 15px 15px 15px;
-            text-align: center;
-        }
-
-        .navbar a:hover {
-            background-color: rgb(255, 255, 255);
-        }
-    </style>
 
 </head>
 
 <body>
     <div class="cabecalho">
-        <div class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#Home">Cardapio</a>
-            <a href="#Home">Sobre nós</a>
-            <a href="#Home">Entregas</a>
-            <a href="#Home">Contatos</a>
-        </div>
     </div>
 
-    <div class="principal">
+    <div class="paidoprincipal">
+        <div class="navbar">
+            <a href="aHome.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="aCardapio.html">Cardapio</a>
+                <div class="dropdown-content">
+                    <a href="aSaladas.html">Saladas</a>
+                    <a href="aCarnes.html">Carnes</a>
+                    <a href="aMassas.html">Massas</a>
+                    <a href="aPeixes.html">Peixes</a>
+                    <a href="aBebidas.html">Bebidas</a>
+                    <a href="aSobremesas.html">Sobremesas</a>
+                </div>
+
+            </div>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contatos</a>
+        </div>
+        <div class="principal">
+            <div>
+                <h2 class="s" style="height: 150px;">Home</h2>
+                <hr color="#993300">
+            </div>
+        </div>
+    </div>
     <div class="rodape">
     </div>
 </body>

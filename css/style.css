@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    min-height: 350px;
+    background-image: url("/images/BannerCarne.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* todos os elementos são flexiveis */
+    display: flex;
+    /* mantem os elementos em linha horizontal e quebra o elemento para proxima linha */
+    flex-flow: row wrap;
+    /* define o elemento a direita  */
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.paidoprincipal {
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/madeira.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-flow: row wrap;
+}
+
+.principal {
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    height: 52px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar .dropdown {
+    display: block;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    /* font-family: inherit; */
+    /* margin: 1; */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #dddddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.s {
+    text-align: center;
+    color: rgb(235, 74, 0);
+}
+
+.c {
+    text-align: center;
+    color: rgb(235, 74, 0);
+}
+
+.m {
+    text-align: center;
+    color: rgb(235, 74, 0);
+}
+
+.p {
+    text-align: center;
+    color: rgb(235, 74, 0);
+}
+
+.b {
+    text-align: center;
+    color: rgb(235, 74, 0);
+}
+
+.s {
+    text-align: center;
+    color: rgb(235, 74, 0);
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+.LinhaDaSalada {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.salada {
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    max-width: 250px;
+    max-height: 465px;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.623);
+}
+
+.salada img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.LinhaDaCarne {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.Carne {
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    max-width: 250px;
+    max-height: 490px;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.623);
+}
+
+.Carne img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.LinhaDaMassa {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.Massa {
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    max-width: 250px;
+    max-height: 525px;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.623);
+}
+
+.Massa img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.LinhaDoPeixe {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.Peixe {
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    max-width: 250px;
+    max-height: 445px;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.623);
+}
+
+.Peixe img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.LinhaDaBebida {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.Bebida {
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    max-width: 250px;
+    max-height: 525px;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.623);
+}
+
+.Bebida img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.LinhaDaSobremesa {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.Sobremesa {
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    max-width: 250px;
+    max-height: 500px;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.623);
+}
+
+.Sobremesa img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}

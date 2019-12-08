@@ -9,44 +9,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lenha & Prosa</title>
-
 </head>
 
 <body>
     <div class="cabecalho">
-
         <div class="slideshow-container">
-
             <div class="mySlides fade">
-                <div class="numbertext">1 / 5</div>
                 <img src="/images/bannerPeixesSlide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="TituloCardapio">Peixes</div>
             </div>
-
+        </div>
+        <div class="slideshow-container">
             <div class="mySlides fade">
-                <div class="numbertext">2 / 5</div>
                 <img src="/images/bannerCarneSlide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="TituloCardapio">Carnes</div>
             </div>
-
+        </div>
+        <div class="slideshow-container">
             <div class="mySlides fade">
-                <div class="numbertext">3 / 5</div>
                 <img src="/images/bannerMassasSlide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="TituloCardapio">Massas</div>
             </div>
-
+        </div>
+        <div class="slideshow-container">
             <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
                 <img src="/images/BannerSaladasSlide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="TituloCardapio">Saladas</div>
             </div>
-
+        </div>
+        <div class="slideshow-container">
             <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
                 <img src="/images/bannerSobremesasSlide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="TituloCardapio">Sobremesas</div>
             </div>
-
         </div>
     </div>
 
@@ -80,25 +75,27 @@
 
     <script>
         var slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+        esconderSlides();
+
+        function esconderSlides() {
+            // coloca todos os slides em slides 
+            slides = document.getElementsByClassName('slideshow-container');
+            // Esconde todos os slides
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
             }
+            //slideIndex = slideIndex + 1
             slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            slides[slideIndex - 1].style.display = 'block';
+            // console.log('slide Index: ' + slideIndex);
+            setTimeout(esconderSlides, 4000); // Change image every 2 seconds
         }
     </script>
+
 </body>
 
 </html>

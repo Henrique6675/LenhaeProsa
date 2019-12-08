@@ -12,6 +12,19 @@
     left: 0px;
     font-size: 25px;
 }
+.TituloPrincipal {
+    position: absolute;
+    height: 50px;
+    top: 5px;
+    /* right: 99%; */
+    font-size: 25px; 
+    background-color: white;
+    width: 100%;
+    text-align: right;
+    padding: 10px 10px 0px 0px;
+    opacity: 30%;
+    color: black;
+}
     /* Fading animation */
     .fade {
         animation-name: fade;

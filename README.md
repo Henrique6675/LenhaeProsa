@@ -28,3 +28,9 @@ git commit -m "Salvando minhas alterações"
 ```
 git push
 ```
+
+### Pegando a ultima versão do github
+
+```
+git pull
+```

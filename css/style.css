@@ -164,6 +164,11 @@ p {
     max-height: 465px;
     box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.623);
 }
+.salada a {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
 
 .salada img {
     width: 200px;

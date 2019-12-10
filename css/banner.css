@@ -9,8 +9,9 @@
 .TituloCardapio {
     position: absolute;
     bottom: 5px;
-    left: 0px;
+    /* left: 0%; */
     font-size: 25px;
+    text-align: right;
 }
 .TituloPrincipal {
     position: absolute;
@@ -18,22 +19,23 @@
     top: 5px;
     /* right: 99%; */
     font-size: 25px; 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
-    text-align: right;
-    padding: 10px 10px 0px 0px;
-    opacity: 30%;
-    color: black;
+    height: 50px;
+    text-align: left;
+    padding: 10px 30px  30px 30px;
+    /* opacity: 30% ; */
+    color: black ;
+    
 }
     /* Fading animation */
     .fade {
         animation-name: fade;
-        animation-duration: 2.5s;
+        animation-duration: 1s;
     }
 
     @-webkit-keyframes fade {
-        from {
-            opacity: .4
+        from {            opacity: .4
         }
 
         to {

@@ -3,7 +3,7 @@ git status
 git add .
 del nome do arquivo
 
-# Comandos do Git para çembrar:
+# Comandos do Git para lembrar:
 
 ### Verificando o status das suas alterações
 
